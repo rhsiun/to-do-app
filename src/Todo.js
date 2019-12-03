@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import './Todo.css';
 import TodoItem from './TodoItem';
 
-var apiKey = "cc2dd1-349dc4-e4d50c-d4c8b4-5ea8df";
-var api = "https://cse204.work/todos";
-
 class Todo extends Component {
   
   constructor(props){

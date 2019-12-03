@@ -99,15 +99,14 @@ h1{
     background-color: white;
 }
 
-#todos .todo.completed{
+.completed{
     color: lightgray;
 }
-
-#todos .todo.completed a{
+.completed a{
     text-decoration: line-through;
 }
 
-#todos .todo.completed .checkBox{
+.completed .checkBox{
     background-color:#888;
 }
 

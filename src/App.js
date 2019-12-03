@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Todo from './Todo';
-import './Todo.css';
 import NewTodo from './NewTodo';
 
 var apiKey = "cc2dd1-349dc4-e4d50c-d4c8b4-5ea8df";
@@ -21,11 +20,10 @@ class App extends Component {
       <div className="App">
         <div id="todos">
             <h1>ToDo List</h1>
-            <input id="newTitle" type="text" placeholder="Enter new todos" />
-            <button id="addBtn">+</button>
+            <NewTodo input_id="newTitle" button_id="addBtn" handleAddEvent={this.handleAddEvent} />            
         </div>
-        <div id="todo-list">
-            
+        <div id="todos">
+          <Todo todos={this.state.todos} handleComplete={this.handleComplete} handleDelete={this.handleDelete} />
         </div>
     
       </div>
