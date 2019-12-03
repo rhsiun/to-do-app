@@ -1,0 +1,119 @@
+body{
+    font-family: "Helvetica", sans-serif;
+}
+
+#todos{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 30px;
+    border: 1px solid lightblue;
+    background-color: lightslategray;
+    border-radius: 5px;
+}
+
+#todos #newTitle{
+    width: 80%;
+    font-size: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 5px;
+}
+
+h1{
+    color: white;
+}
+
+#todos #newTitle:focus{
+    background-color: lightgrey;
+}
+
+#todos #addBtn {
+    background-color: hsl(200,100%, 70%);
+    color: white;
+    border: none;
+    
+    width: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    
+    position: relative;
+    top: 5px;
+}
+
+#todos #addBtn:hover {
+    background-color: hsl(200,100%, 60%);
+}
+
+#todos #addBtn:hover {
+    background-color: hsl(200,100%, 50%);
+}
+
+#todos #addBtn {
+    background-color: hsl(200,100%, 70%);
+    color: white;
+    border: none;
+    width: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    position: relative;
+    top: 5px;
+}
+
+#todos .todo{
+    font-size: 30px;
+    padding: 20px 0px;
+    border-bottom: 1px solid white;
+}
+
+#todos .todo a{
+    color:white;
+}
+
+#todos .todo .delete{
+    float: right;
+    border: none;
+    font-size: 30px;
+    
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color:black;
+    color: white;
+}
+
+
+
+#todos .todo .checkBox{
+    float: right;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #888;
+    border-radius: 4px;
+}
+
+#todos .todo .checkBox:hover{
+    background-color: white;
+}
+
+#todos .todo.completed{
+    color: lightgray;
+}
+
+#todos .todo.completed a{
+    text-decoration: line-through;
+}
+
+#todos .todo.completed .checkBox{
+    background-color:#888;
+}
+
+/*Adjust for mobile layout*/
+@media (max-width: 800px){
+    #todos{
+        width: 80%;
+    }
+}
